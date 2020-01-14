@@ -33,4 +33,4 @@ def add_model(request):
             return redirect('/')
         else:
             form = PostForm()
-            return render(request, "my_template.html", {'form': from})
+            return render(request, "my_template.html", {'form': form})

@@ -4,7 +4,9 @@ from blogging.models import Post, Category
 class PostForm(ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'text', 'author', 'created_date', 'modified_date', 'published_date']
+        fields = ['title', 'text', 'author', 'published_date']
+
+        #   Created date and modified date removed because they cannot be changed
 
 
 class CategoryForm(ModelForm):
